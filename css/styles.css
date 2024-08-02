@@ -1,0 +1,35 @@
+:root {
+  --dark-blue: #2d314d;
+  --lime-green: #31d35c;
+  --bright-cyan: #2bb7da;
+  --grayish-blue: #9698a6;
+  --light-grayish-blue: #f3f4f6;
+  --very-light-gray: #fafafa;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Public Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  box-sizing: border-box;
+  color: var(--grayish-blue);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dark-blue);
+}
