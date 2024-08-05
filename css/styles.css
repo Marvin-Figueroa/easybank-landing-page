@@ -27,7 +27,7 @@ html {
 
 body {
   font-family: "Public Sans", Arial, Helvetica, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   box-sizing: border-box;
   color: var(--grayish-blue);
@@ -123,6 +123,29 @@ h1 {
   padding: 4rem 2rem;
 }
 
+/* ------------------------------------------- Features Section --------------------------------------------- */
+
+.section-features {
+  background-color: var(--light-grayish-blue);
+  padding: 5rem 2rem;
+}
+
+.section-features__description {
+  margin-bottom: 4rem;
+}
+
+.section-features .title {
+  font-size: 3.3rem;
+}
+
+.feature {
+  padding: 2rem 0;
+}
+
+.feature__title {
+  font-size: 2.4rem;
+}
+
 /* ======================================= Media Queries ======================================= */
 
 @media (min-width: 500px) and (max-width: 651px) {
@@ -132,6 +155,10 @@ h1 {
   .hero-content__text {
     padding: 8rem;
     gap: 5rem !important;
+  }
+
+  .section-features {
+    padding: 5rem 8rem !important;
   }
 }
 
@@ -156,6 +183,10 @@ h1 {
   .hero-content__text {
     padding: 10rem 10rem 8rem 10rem;
     gap: 6rem !important;
+  }
+
+  .section-features {
+    padding: 5rem 10rem !important;
   }
 }
 
@@ -188,6 +219,14 @@ h1 {
     padding: 6rem 0 6rem 6rem;
     gap: 3rem !important;
   }
+
+  .section-features__description {
+    max-width: 60ch;
+  }
+
+  .section-features {
+    padding: 6rem !important;
+  }
 }
 
 @media (min-width: 1140px) {
@@ -201,6 +240,10 @@ h1 {
 
   .hero-content__text {
     padding: 9rem 0 9rem 9rem;
+  }
+
+  .section-features {
+    padding: 8rem !important;
   }
 }
 
@@ -216,6 +259,10 @@ h1 {
 
   .hero-content__text {
     padding: 12rem 0 12rem 12rem;
+  }
+
+  .section-features {
+    padding: 12rem !important;
   }
 }
 
