@@ -253,7 +253,7 @@ h1 {
   }
 
   .section-features {
-    padding: var(--container-padding-xl) 2rem !important;
+    padding: var(--container-padding-xl) !important;
   }
 }
 
