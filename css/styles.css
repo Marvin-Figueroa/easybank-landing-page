@@ -99,7 +99,7 @@ h1 {
 
 /* ------------------------------------------- Hero Section --------------------------------------------- */
 .section-hero {
-  background-color: var(--light-grayish-blue);
+  background-color: var(--very-light-gray);
 }
 
 .hero-content img {
