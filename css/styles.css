@@ -39,6 +39,10 @@ h3 {
   color: var(--dark-blue);
 }
 
+h1 {
+  font-size: 3.5rem;
+}
+
 /* ------------------------------------------- Utilities --------------------------------------------- */
 
 .cta {
@@ -93,7 +97,127 @@ h3 {
   opacity: 0;
 }
 
+/* ------------------------------------------- Hero Section --------------------------------------------- */
+.section-hero {
+  background-color: var(--light-grayish-blue);
+}
+
+.hero-content img {
+  position: absolute;
+  top: -35vw;
+  left: 0;
+  right: 0;
+}
+
+.hero-content__banner {
+  position: relative;
+  min-height: 210px;
+  height: 87vw;
+  background-image: url("../images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top -5vh left 0;
+  background-size: cover;
+}
+
+.hero-content__text {
+  padding: 4rem 2rem;
+}
+
 /* ======================================= Media Queries ======================================= */
+
+@media (min-width: 500px) and (max-width: 651px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .hero-content__text {
+    padding: 8rem;
+    gap: 5rem !important;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 992px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .hero-content__banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-content img {
+    display: block;
+    position: static;
+    width: 70% !important;
+    margin: 0 auto;
+  }
+
+  .hero-content__text {
+    padding: 10rem 10rem 8rem 10rem;
+    gap: 6rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  .hero-content {
+    height: auto !important;
+  }
+
+  .hero-content__banner {
+    position: relative;
+    height: auto !important;
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-position: top -15rem left 6rem;
+    background-size: 120%;
+  }
+
+  .hero-content__banner img {
+    width: 80% !important;
+    position: absolute;
+    top: -7rem;
+    right: -45%;
+  }
+
+  .hero-content__text {
+    text-align: left !important;
+    padding: 6rem 0 6rem 6rem;
+    gap: 3rem !important;
+  }
+}
+
+@media (min-width: 1140px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .hero-content__banner img {
+    top: -9rem;
+  }
+
+  .hero-content__text {
+    padding: 9rem 0 9rem 9rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  h1 {
+    font-size: 5.5rem;
+  }
+
+  .hero-content__banner {
+    background-position: top -19rem left 6rem;
+    background-size: 120%;
+  }
+
+  .hero-content__text {
+    padding: 12rem 0 12rem 12rem;
+  }
+}
 
 @media (max-width: 768px) {
   .navbar-nav {
