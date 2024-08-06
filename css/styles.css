@@ -177,6 +177,29 @@ h1 {
 .card-text {
   color: var(--grayish-blue);
 }
+
+/* ------------------------------------------- Footer --------------------------------------------- */
+
+.footer-section {
+  background-color: var(--dark-blue);
+  padding: var(--container-padding-md) var(--container-padding-sm) !important;
+}
+
+.logo-brand {
+  width: 180px;
+  height: auto;
+  fill: var(--white);
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: var(--white);
+}
 /* ======================================= Media Queries ======================================= */
 
 @media (min-width: 500px) and (max-width: 651px) {
@@ -190,8 +213,13 @@ h1 {
   }
 
   .section-features,
-  .section-articles {
+  .section-articles,
+  .footer-section {
     padding: var(--container-padding-md) var(--container-padding-lg) !important;
+  }
+
+  .social-icon {
+    width: 24px !important;
   }
 }
 
@@ -215,9 +243,14 @@ h1 {
 
   .hero-content__tex,
   .section-featurest,
-  .section-articles {
+  .section-articles,
+  .footer-section {
     padding: var(--container-padding-md) var(--container-padding-xl) !important;
     gap: 6rem !important;
+  }
+
+  .social-icon {
+    width: 20px !important;
   }
 }
 
@@ -257,7 +290,8 @@ h1 {
   }
 
   .section-features,
-  .section-articles {
+  .section-articles,
+  .footer-section {
     padding: var(--container-padding-md) var(--container-padding-lg) !important;
   }
 
@@ -267,6 +301,30 @@ h1 {
 
   .card-body {
     padding: 1rem !important;
+  }
+
+  .logo-brand {
+    width: 140px;
+  }
+
+  .social-icon {
+    width: 20px !important;
+  }
+
+  .social-icon:hover {
+    cursor: pointer;
+
+    path {
+      fill: var(--lime-green);
+    }
+  }
+
+  .footer__link:hover {
+    color: var(--lime-green);
+  }
+
+  .footer__copy {
+    font-size: 1.6rem !important;
   }
 }
 
@@ -292,6 +350,10 @@ h1 {
   .card-body {
     padding: 3rem !important;
   }
+
+  .logo-brand {
+    width: 150px;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -310,8 +372,14 @@ h1 {
   }
 
   .section-features,
-  .section-articles {
+  .section-articles,
+  .footer-section {
     padding: var(--container-padding-xxl) !important;
+  }
+
+  .social-icon {
+    width: 24px;
+    height: 24px;
   }
 }
 
