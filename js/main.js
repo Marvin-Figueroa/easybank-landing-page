@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   backdrop.addEventListener("click", function (e) {
     if (e.target.id === "navbarContent") {
       this.classList.remove("show");
+      document.body.classList.remove("no-scroll");
       navbarToggler.src = initialIconSrc;
     }
   });
