@@ -19,14 +19,6 @@
   --container-padding-xxl: 12rem;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
 html {
   font-size: 62.5%;
 }
@@ -70,11 +62,17 @@ h1 {
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* ------------------------------------------- Navbar --------------------------------------------- */
 
 .navbar {
   height: 70px;
   z-index: 10000 !important;
+  padding-left: var(--container-padding-sm);
+  padding-right: var(--container-padding-sm);
 }
 
 .navbar-nav {
@@ -228,6 +226,11 @@ h1 {
     font-size: 4rem;
   }
 
+  .navbar {
+    padding-left: var(--container-padding-md);
+    padding-right: var(--container-padding-md);
+  }
+
   .hero-content__banner {
     display: flex;
     justify-content: center;
@@ -241,8 +244,8 @@ h1 {
     margin: 0 auto;
   }
 
-  .hero-content__tex,
-  .section-featurest,
+  .hero-content__text,
+  .section-features,
   .section-articles,
   .footer-section {
     padding: var(--container-padding-md) var(--container-padding-xl) !important;
@@ -257,6 +260,11 @@ h1 {
 @media (min-width: 992px) {
   body {
     font-size: 1.6rem;
+  }
+
+  .navbar {
+    padding-left: var(--container-padding-md);
+    padding-right: var(--container-padding-md);
   }
 
   .hero-content {
@@ -297,6 +305,11 @@ h1 {
 
   .card-title {
     font-size: 2rem !important;
+
+    &:hover {
+      cursor: pointer;
+      color: var(--lime-green);
+    }
   }
 
   .card-body {
@@ -333,18 +346,24 @@ h1 {
     font-size: 4.5rem;
   }
 
+  .navbar {
+    padding-left: var(--container-padding-lg);
+    padding-right: var(--container-padding-lg);
+  }
+
   .hero-content__banner img {
     top: -9rem;
   }
 
   .hero-content__text {
-    padding: var(--container-padding-xl) 0 var(--container-padding-xl)
-      var(--container-padding-xl) !important;
+    padding: var(--container-padding-lg) 0 var(--container-padding-lg)
+      var(--container-padding-lg) !important;
   }
 
   .section-features,
-  .section-articles {
-    padding: var(--container-padding-xl) !important;
+  .section-articles,
+  .footer-section {
+    padding: var(--container-padding-lg) !important;
   }
 
   .card-body {
@@ -359,6 +378,11 @@ h1 {
 @media (min-width: 1300px) {
   h1 {
     font-size: 5.5rem;
+  }
+
+  .navbar {
+    padding-left: var(--container-padding-xxl);
+    padding-right: var(--container-padding-xxl);
   }
 
   .hero-content__banner {
@@ -392,7 +416,7 @@ h1 {
     position: absolute;
     top: 70px;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
     right: 0;
     left: 0;
     padding: 2.5rem;
